@@ -1,0 +1,69 @@
+.items{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 0.5rem;
+  margin: 1rem 0;
+ 
+  background-color:#4b4b4b;
+}
+.alining{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+}
+.expense__price{
+    font-size: 1.3rem;
+  
+    color: rgb(145, 207, 236);
+   
+  
+}
+.button{
+  border:1px solid white;
+  background-color: black;
+  color:white;
+  font-weight: bold;
+  padding:0.8rem;
+  border-radius:12px;
+  cursor: pointer;
+}
+.expense__title{
+    font-size: 1.4rem;
+ 
+  font-weight: bold;
+  color: white;
+}
+
+.date{
+border-radius: 12px;
+margin-right:1.5rem;
+background-color:#40005d;
+border:1px solid white;
+padding:0.5rem;
+ 
+
+
+}
+.expense__month{
+  font-size: 1rem;
+   
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+.expense__day{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding:0.2rem;
+  color: white;
+  display: block;
+}

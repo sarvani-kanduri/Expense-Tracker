@@ -1,0 +1,30 @@
+.monthly__filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
+select{
+    border:1px solid white;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    padding:0.8rem;
+    font-size: 1rem;
+    border-radius:12px;
+
+}
+ @media(max-width:39rem){
+    select{
+        font-weight:normal;
+    font-size: 0.5rem;
+    padding:0.4rem;
+    }
+    .monthly__filter{
+        padding:0.5rem;
+    }
+
+} 

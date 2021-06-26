@@ -1,0 +1,12 @@
+.expenses{
+    background-color: black;
+    margin:2rem auto;
+    width:50rem;
+    max-width: 95%; 
+   padding:1rem;
+}
+.nodetails{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
