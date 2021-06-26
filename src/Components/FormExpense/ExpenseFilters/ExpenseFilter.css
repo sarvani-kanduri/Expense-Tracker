@@ -17,7 +17,7 @@ select{
     border-radius:12px;
 
 }
- @media(max-width:39rem){
+ /* @media(max-width:39rem){
     select{
         font-weight:normal;
     font-size: 0.5rem;
@@ -27,4 +27,4 @@ select{
         padding:0.5rem;
     }
 
-} 
+}  */
