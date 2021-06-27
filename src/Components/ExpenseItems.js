@@ -5,6 +5,9 @@ const ExpenseItems =(props)=>{
     const month = props.date.toLocaleString('en-US', {month:'long'})
     const day = props.date.toLocaleString('en-US', {day:'2-digit'})
     
+    const deleteHandler=()=>{
+        props.deleteItem(props.id);
+    }
 
     
     return (
@@ -20,7 +23,7 @@ const ExpenseItems =(props)=>{
 
 <div className="expense__price">Rs. {props.amount}</div>
 </div>
-<button className="button">Remove</button>
+<button className="button" onClick={deleteHandler}>Remove</button>
     </Card>
 
     );

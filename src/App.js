@@ -29,13 +29,21 @@ function App() {
     setexpenses( (prevexpenses) =>{
     return[enteredData,...prevexpenses];
     });
-
   }
+    const deleteItemHandler = (specifiedId) =>{
+      setexpenses ( (prevexpenses) =>{
+     return( prevexpenses.filter( expe => expe.id !== specifiedId))
+    
+      });
+     
+    }
+
+  
   return (
     <div>
       
           <MainExpenseForm onExpenseData={expenseDataHandler} />
-        <Expenses  expenses ={expenses}/>
+        <Expenses  expenses ={expenses} onDelete ={deleteItemHandler} />
        
     </div>
   );

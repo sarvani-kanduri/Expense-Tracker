@@ -30,9 +30,11 @@ console.log(total);
           {filterMonth.length === 0 ? <p className="nodetails">No Details</p> : filterMonth.map((expense) => 
             <ExpenseItems
              key={expense.id}
+             id={expense.id}
             title={expense.title} 
             amount={expense.amount} 
             date={expense.date} 
+            deleteItem={props.onDelete}
            />)}
            <ExpenseTotal  totalamount={total}/>
      </Card>
